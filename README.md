@@ -1,4 +1,4 @@
-# Hackintosh OpenCore EFI for MAXSUN B760M
+# Hackintosh OpenCore EFI for MAXSUN Terminator B760M
 ```
 Model              MAXSUN B760M
 CPU                Intel Core i5-13600KF
