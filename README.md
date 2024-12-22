@@ -6,7 +6,7 @@ Memory             GLOWAY DDR4 4000MHz 16Gx2
 Graphics           AMD Radeon RX6600XT 8GB
 Audio              Realtek ALC897
 Wi-Fi              DELL DW1820A
-Storage            WD BLUS SN570 500GB
+Storage            WD BLUE SN570 500GB
 Monitor            FHD 1920x1080
 BIOS Verison       H6.6G
 macOS Version      Ventura 13.7.2
