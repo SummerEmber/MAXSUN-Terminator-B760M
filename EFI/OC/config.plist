@@ -20,7 +20,15 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-EC.aml</string>
+				<string>SSDT-HPET.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-EC-USBX.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -45,6 +53,14 @@
 				<true/>
 				<key>Path</key>
 				<string>SSDT-SBUS-MCHC.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-PMC.aml</string>
 			</dict>
 		</array>
 		<key>Delete</key>
@@ -158,6 +174,24 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
+				<string>VirtualSMC.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/VirtualSMC</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
 				<string>WhateverGreen.kext</string>
 				<key>Comment</key>
 				<string></string>
@@ -176,13 +210,13 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>VirtualSMC.kext</string>
+				<string>NVMeFix.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/VirtualSMC</string>
+				<string>Contents/MacOS/NVMeFix</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -302,13 +336,13 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>USBPorts.kext</string>
+				<string>USBInjectAll.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
-				<string></string>
+				<string>Contents/MacOS/USBInjectAll</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -320,13 +354,13 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>USBInjectAll.kext</string>
+				<string>USBPorts.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/USBInjectAll</string>
+				<string></string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -624,7 +658,7 @@
 			<key>ScanPolicy</key>
 			<integer>0</integer>
 			<key>SecureBootModel</key>
-			<string>j160</string>
+			<string>Disabled</string>
 			<key>Vault</key>
 			<string>Optional</string>
 		</dict>
@@ -671,6 +705,8 @@
 		<dict>
 			<key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
 			<dict>
+				<key>revpatch</key>
+				<string>auto,sbvmm,cpuname</string>
 				<key>revcpu</key>
 				<integer>1</integer>
 				<key>revcpuname</key>
@@ -680,8 +716,6 @@
 			<dict>
 				<key>boot-args</key>
 				<string>agdpmod=pikera</string>
-				<key>csr-active-config</key>
-				<data>AAAAAA==</data>
 				<key>run-efi-updater</key>
 				<string>No</string>
 			</dict>
@@ -708,7 +742,7 @@
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string>F5K926270QXFHDDA8</string>
+			<string>F5K9392074NFHDDAD</string>
 			<key>ProcessorType</key>
 			<integer>3842</integer>
 			<key>ROM</key>
@@ -720,9 +754,9 @@
 			<key>SystemProductName</key>
 			<string>MacPro7,1</string>
 			<key>SystemSerialNumber</key>
-			<string>F5KYXPY3P7QM</string>
+			<string>F5KZG1Y3P7QM</string>
 			<key>SystemUUID</key>
-			<string>39CF49DB-83A1-4D38-84F3-2642B69194E4</string>
+			<string>D52C1254-F7B2-43A1-B774-E6F3D47EB54C</string>
 		</dict>
 		<key>SMBIOS</key>
 		<dict>
@@ -741,7 +775,7 @@
 			<key>BoardProduct</key>
 			<string>Mac-27AD2F918AE68F61</string>
 			<key>BoardSerialNumber</key>
-			<string>F5K926270QXFHDDA8</string>
+			<string>F5K9392074NFHDDAD</string>
 			<key>BoardType</key>
 			<integer>10</integer>
 			<key>BoardVersion</key>
@@ -751,7 +785,7 @@
 			<key>ChassisManufacturer</key>
 			<string></string>
 			<key>ChassisSerialNumber</key>
-			<string>F5KYXPY3P7QM</string>
+			<string>F5KZG1Y3P7QM</string>
 			<key>ChassisType</key>
 			<integer>7</integer>
 			<key>ChassisVersion</key>
@@ -775,9 +809,9 @@
 			<key>SystemSKUNumber</key>
 			<string>System SKU#</string>
 			<key>SystemSerialNumber</key>
-			<string>F5KYXPY3P7QM</string>
+			<string>F5KZG1Y3P7QM</string>
 			<key>SystemUUID</key>
-			<string>39CF49DB-83A1-4D38-84F3-2642B69194E4</string>
+			<string>D52C1254-F7B2-43A1-B774-E6F3D47EB54C</string>
 			<key>SystemVersion</key>
 			<string>1.0</string>
 		</dict>
@@ -788,7 +822,7 @@
 		<key>UpdateSMBIOS</key>
 		<true/>
 		<key>UpdateSMBIOSMode</key>
-		<string>Create</string>
+		<string>Overwrite</string>
 		<key>UseRawUuidEncoding</key>
 		<false/>
 	</dict>
