@@ -650,7 +650,7 @@
 			<key>EnablePassword</key>
 			<false/>
 			<key>ExposeSensitiveData</key>
-			<integer>7</integer>
+			<integer>3</integer>
 			<key>HaltLevel</key>
 			<integer>2147483648</integer>
 			<key>PasswordHash</key>
@@ -811,7 +811,7 @@
 			<key>SystemSKUNumber</key>
 			<string>System SKU#</string>
 			<key>SystemSerialNumber</key>
-			<string>F5KY61Z6P7QM</string>
+			<string></string>
 			<key>SystemUUID</key>
 			<string></string>
 			<key>SystemVersion</key>
