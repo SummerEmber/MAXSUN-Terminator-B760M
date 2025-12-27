@@ -9,6 +9,6 @@ Wi-Fi              DELL DW1820A
 Storage            WD BLUE SN570 500GB
 Monitor            FHD 1920x1080
 BIOS Verison       H6.6G
-macOS Version      Ventura 15.7.2
-OpenCore Version   1.0.5
+macOS Version      Ventura 15.7.3
+OpenCore Version   1.0.6
 ```
