@@ -124,7 +124,13 @@
 	<key>DeviceProperties</key>
 	<dict>
 		<key>Add</key>
-		<dict/>
+		<dict>
+			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
+			<dict>
+				<key>layout-id</key>
+				<integer>11</integer>
+			</dict>
+		</dict>
 		<key>Delete</key>
 		<dict/>
 	</dict>
@@ -158,7 +164,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/AMFIPass</string>
 				<key>MaxKernel</key>
@@ -614,7 +620,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>agdpmod=pikera -amfipass keepsyms=1 ipc_control_port_options=0 alcid=11</string>
+				<string>agdpmod=pikera keepsyms=1 ipc_control_port_options=0</string>
 				<key>run-efi-updater</key>
 				<string>No</string>
 				<key>csr-active-config</key>
@@ -658,7 +664,7 @@
 			<key>ProcessorType</key>
 			<integer>3841</integer>
 			<key>ROM</key>
-			<data>ESIzRFVm</data>
+			<data></data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemMemoryStatus</key>
@@ -703,9 +709,9 @@
 			<key>ChassisVersion</key>
 			<string>Mac-27AD2F918AE68F61</string>
 			<key>FirmwareFeatures</key>
-			<data>ZvCv/QgAAAA=</data>
+			<data></data>
 			<key>FirmwareFeaturesMask</key>
-			<data>f////wgAAAA=</data>
+			<data></data>
 			<key>PlatformFeature</key>
 			<integer>0</integer>
 			<key>ProcessorType</key>
