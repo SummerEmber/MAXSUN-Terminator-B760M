@@ -10,7 +10,7 @@ Wi-Fi              DELL DW1820A
 Storage            WD BLUE SN570 500GB
 Monitor            FHD 1920x1080
 BIOS Verison       H6.6G
-macOS Version      Tahoe 26.7.1
+macOS Version      Tahoe 26.7.2
 OpenCore Version   1.0.8
 ```
 ## BIOS Settings
