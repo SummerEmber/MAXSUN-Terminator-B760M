@@ -6,11 +6,11 @@ CPU                Intel Core i5-13600KF
 Memory             GLOWAY DDR4 4000MHz 16Gx2
 Graphics           AMD Radeon RX6600XT 8GB
 Audio              Realtek ALC897
-Wi-Fi              DELL DW1820A
+Wi-Fi              None
 Storage            WD BLUE SN570 500GB
 Monitor            FHD 1920x1080
 BIOS Verison       H6.6G
-macOS Version      Tahoe 26.7.2
+macOS Version      Tahoe 26.7.3
 OpenCore Version   1.0.8
 ```
 ## BIOS Settings

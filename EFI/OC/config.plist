@@ -340,24 +340,6 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>USBToolBox.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<false/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/USBToolBox</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
 				<string>USBMap.kext</string>
 				<key>Comment</key>
 				<string></string>
@@ -404,7 +386,7 @@
 			<key>MaxKernel</key>
 			<string></string>
 			<key>MinKernel</key>
-			<string>19.0.0</string>
+			<string></string>
 		</dict>
 		<key>Force</key>
 		<array/>
@@ -429,7 +411,7 @@
 			<key>DisableIoMapperMapping</key>
 			<false/>
 			<key>DisableLinkeditJettison</key>
-			<false/>
+			<true/>
 			<key>DisableRtcChecksum</key>
 			<false/>
 			<key>ExtendBTFeatureFlags</key>
@@ -602,7 +584,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>agdpmod=pikera keepsyms=1 ipc_control_port_options=0</string>
+				<string>agdpmod=pikera ipc_control_port_options=0</string>
 				<key>run-efi-updater</key>
 				<string>No</string>
 				<key>csr-active-config</key>
@@ -613,7 +595,7 @@
 			<key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
 			<dict>
 				<key>revpatch</key>
-				<string>auto,sbvmm,cpuname</string>
+				<string>sbvmm,cpuname</string>
 				<key>revcpu</key>
 				<integer>1</integer>
 				<key>revcpuname</key>
@@ -673,7 +655,7 @@
 			<key>BoardManufacturer</key>
 			<string></string>
 			<key>BoardProduct</key>
-			<string>Mac-27AD2F918AE68F61</string>
+			<string></string>
 			<key>BoardSerialNumber</key>
 			<string></string>
 			<key>BoardType</key>
@@ -689,7 +671,7 @@
 			<key>ChassisType</key>
 			<integer>7</integer>
 			<key>ChassisVersion</key>
-			<string>Mac-27AD2F918AE68F61</string>
+			<string></string>
 			<key>FirmwareFeatures</key>
 			<data></data>
 			<key>FirmwareFeaturesMask</key>
@@ -711,7 +693,7 @@
 			<key>SystemSerialNumber</key>
 			<string></string>
 			<key>SystemUUID</key>
-			<string></string>
+			<string>DBBC3C52-3EA7-484B-9588-4B02CC6743B4</string>
 			<key>SystemVersion</key>
 			<string>1.0</string>
 		</dict>
@@ -810,6 +792,8 @@
 				<true/>
 				<key>LoadEarly</key>
 				<false/>
+				<key>HideVerbose</key>
+				<false/>
 				<key>Path</key>
 				<string>OpenHfsPlus.efi</string>
 			</dict>
@@ -821,6 +805,8 @@
 				<key>Enabled</key>
 				<true/>
 				<key>LoadEarly</key>
+				<false/>
+				<key>HideVerbose</key>
 				<false/>
 				<key>Path</key>
 				<string>OpenCanopy.efi</string>
@@ -834,6 +820,8 @@
 				<true/>
 				<key>LoadEarly</key>
 				<false/>
+				<key>HideVerbose</key>
+				<false/>
 				<key>Path</key>
 				<string>OpenRuntime.efi</string>
 			</dict>
@@ -846,20 +834,10 @@
 				<true/>
 				<key>LoadEarly</key>
 				<false/>
-				<key>Path</key>
-				<string>ResetNvramEntry.efi</string>
-			</dict>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>LoadEarly</key>
+				<key>HideVerbose</key>
 				<false/>
 				<key>Path</key>
-				<string>ToggleSipEntry.efi</string>
+				<string>ResetNvramEntry.efi</string>
 			</dict>
 		</array>
 		<key>Input</key>
